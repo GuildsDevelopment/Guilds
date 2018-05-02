@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Guilds extends JavaPlugin {
+	public static Guilds plugin;
 	@Override
 	public void onEnable() {
 		
