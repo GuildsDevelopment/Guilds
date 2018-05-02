@@ -19,8 +19,8 @@ package com.Jacksonnn.Guilds;
  * 
  * attack <name>
  * 
- * 
  * coins (deposit|withdrawal|add*|remove*)
+ * job (join | quit)
  * 
  */
 
@@ -79,6 +79,21 @@ public class Commands implements CommandExecutor {
 			return true;
 		}
 		else if (args.length == 1 && args[0].equalsIgnoreCase("coins")) {
+			if (args.length == 2 && args[1].equalsIgnoreCase("deposit")) {
+				
+			}
+			else if (args.length == 2 && args[1].equalsIgnoreCase("withdrawl")) {
+				
+			}
+			else if (args.length == 2 && args[1].equalsIgnoreCase("add")) {
+				
+			}
+			else if (args.length == 2 && args[1].equalsIgnoreCase("remove")) {
+				
+			}
+			return true;
+		}
+		else if (args.length == 1 && args[0].equalsIgnoreCase("jobs")) {
 			return true;
 		}
 		return false;
