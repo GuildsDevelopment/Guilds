@@ -1,4 +1,4 @@
-package com.Jacksonnn.Guilds.Configuration;
+package com.Jacksonnn.Guilds.configuration;
 
 import java.io.File;
 
@@ -24,7 +24,7 @@ public class ConfigManager {
 		} else if (type == ConfigType.DEFAULT) {
 			config = defaultConfig.get();
 			
-			
+			config.addDefault("Storage", "");
 		}
 	}
 }

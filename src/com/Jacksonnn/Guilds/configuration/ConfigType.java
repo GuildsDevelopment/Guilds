@@ -1,4 +1,4 @@
-package com.Jacksonnn.Guilds.Configuration;
+package com.Jacksonnn.Guilds.configuration;
 
 import java.util.HashMap;
 
