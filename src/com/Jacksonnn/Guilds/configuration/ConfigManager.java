@@ -24,7 +24,13 @@ public class ConfigManager {
 		} else if (type == ConfigType.DEFAULT) {
 			config = defaultConfig.get();
 			
-			config.addDefault("Storage", "");
+			config.addDefault("Storage.engine", "sqlite");
+
+			config.addDefault("Storage.MySQL.host", "localhost");
+			config.addDefault("Storage.MySQL.port", 3306);
+			config.addDefault("Storage.MySQL.pass", "");
+			config.addDefault("Storage.MySQL.db", "minecraft");
+			config.addDefault("Storage.MySQL.user", "root");
 		}
 	}
 }
