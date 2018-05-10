@@ -1,0 +1,205 @@
+Guilds:
+
+Commands:
+
+  Core:
+  
+  /guilds create <name> - Creates a new guild
+  /guilds delete - Deletes your current guild
+  /guilds info <name> - Lists info for a Guild
+  
+  Management:
+  
+  /guilds claim - Claims the chunk the sender is standing in 
+  /guilds add <name> - Adds a guild to the chunk of land
+  /guilds unclam - Unlaims the chunk the sender is standing in
+  
+  /guilds invite <name> - Invites player to guild
+  /guilds kick <name> - Kicks player from guild
+  
+  Extras:
+  
+  /guilds chat - Toggles private chat channel
+  /guilds trust <name> - Trusts a Guild
+  
+  Raiding: 
+  
+  /guilds attack - Attacks land that the player is standing in (also places player's flag, which is then in jeprady)  
+
+Features:
+
+  Skills:
+  
+  - Earn coins for doing certain tasks
+  
+  Combat - Killing entities
+  Creation - Successfully using containers
+  Breading - Taming pets
+  Moving - Walking or sprinting
+  Online - Time logged on
+
+  Chat: 
+  
+  - Configurable chat placeholders for vault
+  
+  {Level} - Player level - Configurable
+  {Guild} - Player guild - Configurable
+
+  Balance:
+  
+  /guilds coins add <amount> - Adds coins to the Guild bank
+  /g coins remove <amount> - Removes coins from the Guild bank
+  
+  - Currency for 
+
+  Lands:
+  
+  - Use backpack to create Lands
+  
+  - Teleport to different lands of your guild
+  - Hide features of your base from enemies
+  
+  Flag: - Gui tool
+  
+  # Your flag is the protection of your Guild, it can be captured at any time. 
+  # If your flag is captured, they have access to part of your backpack by right clicking the flag. 
+  # The things they can access can all be found in the config, and can be edited. (See backpack for more) 
+  
+  - You hold a flag that lets you configure your Guild
+  - Your flag can be captured and held hostage
+  - If your flag is captured, you have access to go their guild home
+  - The block for the flag can be configurable, as long as it has other colors  of the type it's good.
+  
+  Backpack: - Gui tool openable with /g backpack 
+  
+  - Portable backpack meant for a portable flag, has a few more features
+  
+   Upgrades - Used to upgrade all of the Guild machines that have been added to the Guild 
+  
+   Constructor - Make or use materials and components to create machines like Bird killers, turrets, cannons, -
+    and more things to protect and level up your Guild. Basically a custom crafting table in the backpack that makes special items from Guilds
+  
+   Coins - Manage guild coins
+   
+   Lands - Teleport delete and create lands for your Guild
+   
+   Wars - Manage wars between Guilds, can be used to teleport to the attacker's nearest land, message sent if you're under attack.
+   
+   Scrolls - You can send scrolls to other Guilds that appear in their backpack, - 
+    it will send a notification to the Guild target, the people with backpack permission can read them. 
+    (they pop up as a chat message when they are read, they are then removed from the list) 
+    
+   Burner - Used to get rid of items that a user no longer needs / doesn't want
+   
+   Birds - You can use this helpful tool to send any item of choice to another guild, can be useful for sending letters -
+    to offline Guilds, they can send back and forth. These aren't just digital, they actually fly around from claimed area to claimed area, -
+    (almost in a teleport then wait manner) they will wait at one land for about a minute or so, the land owners will get informed that there is a -
+    bird flying over the land, they can then shoot at the bird with a bow to kill it, it has 18 hp (6 full hearts) It moves in loop-d-loops
+    The bird will only travel to the lands that are most linear to the lands it's traveling too, so it wont hit all of the Guilds, just a few -
+    (In other words, it will only go over a few guilds, it will choose 2-3 that are online so they get a chance to get the things the bird is carrying). -
+    These birds are custom skulls with a bit of cloud particles and smoke particles behind, it makes lound chicken noises when the guild is notified when it passes by. -
+    When the birds are killed they drop the loot that was being sent, the killers can then pick it up, the senders then get copies of the loot back with the -
+    message "Your bird was murdered, we found these gifts for your rememberance", and then the Guild's bird's level ups, (the hp upgrades and potions you can add to it), are knocked back by 1 level.
+    This should all happen in the course of 1 minute, so the bird should fly around 4 lands giving 4 guilds a chance, we'll speak about when there's not more than 1 Guild.
+   
+   Market - This sends items to the market, yet again the bird system is run.. this time a pointless loop back around to the land it -
+    was sent from with a message "Tweet.. I couldn't find the market lands. -
+    I gave it to a man he said he knew where it was supposed to go" , a virtual shop that has shops by the -
+    Guild, so the best items are listed first and the worst are last, sell better items, more people will see them. -
+    To be more specific, the shops are listing items in a group with the guild's name, so you can sell stuff through your guild's market.
+    
+   # The next section is filled with items from the defense and offense systems, it's meant to replicate a feature that is MCMMO + SLIMEFUN.  
+   # Materials are items that you obtain from certain mobs your kill. The amount of items obtainable is random depending on the chance.
+   # Machines and rarities and all other placable items or spawn items can be placed by right clicking on the ground. 
+   # Minions, rarities, and all other workable type items can all be upgraded. Entities can have upgraded range, speed, etc. And machines can have upgrades based on what machine it is. These upgrades are accessable through the backpack, as of most things. 
+    
+   Materials: - When you obtain these items you get a copy of the item, and tripple the normal levels you'd get from doing a normal Skill
+   
+   Cat's Hairball - Bonemeal - 8/10 Chance - (When Ocelot or Wolf killed or bred)
+   - Can be used to make various magic tools and drinks
+   
+   Troll's Gold - Golden Nugget - 6/10 Chance - (When Zombie is killed) 
+   - Can be used to make mystical machines
+   
+   Dragon's Brain - Redstone Ore - 2/10 Chance - (When ender dragon is killed)  
+   - Can be used to make complex systems (rare valuable stuff)
+
+   Skeleton's Arm - Bone 7/10 Chance - (When skeleton is killed)
+   - Can be used to make components
+
+   Zombie Acid - Slime Ball - 7/10 Chance - (When Zombie Killed) 
+   - Can be used to finish up machines
+   
+   Pigman Scab - Stick - 10/10 Chance - (When Zombie Pigman Killed) 
+   - Can be used to make components
+   
+   Ghost Skin - Ghast Tear - 10/10 Chance (When Ghast drops tear)
+   - Can be used to construct complex systems
+   
+   Villager Food - Carrot - 4/10 (When villager killed) 
+   - Can be used to make Rarities (rare valuable stuff) 
+   
+   Villager Tears - Poppy - 3/10 (When villager killed) 
+   - Can be used to make Rarities (rare valuable stuff) 
+   
+   Bird's Eye - Eye of ender - 9/10 (When chicken killed) 
+   - Can be used to make machines
+   
+   Zombie's Brain - Rotten Flesh - 4/10 Chance (When Zombie killed) 
+   - Can be used to make minions 
+
+   Components: - These are the smaller components that make up the working machines
+
+   Cartery Plate - Wooden Pressure Plate   
+   - Crafted with Pigman Scab and Skeleton's Arm 
+   
+   Crystal Ball - Custom Skull Head
+   - Crafted with Ghost Skin and Zombie Acid
+   
+   Mystic Bottle - Water bottle
+   - Crafted with Cow snot and Cat's Hairball 
+   
+   Flesh Blade - Wooden Sword
+   - Crafted with Pigment Scab and Troll's Gold
+   
+   Liquid Saphire - Glass Bottle 
+   - Crafted with Zombie Acid and Skeleton Arm
+   
+   Liquid Ruby - Glass Bottle 
+   - Crafted with Ghost Skin and 
+   
+   Toothed Sensor - Custom Skull Head 
+   - Crafted with Skeleton's Arm and Bird's Eye
+   
+   Kenetic Gell - Slime Block
+   - Crafted with Zombie Acid and Cat's Hairball   
+   
+   Minions:   
+   
+   Haunted Farmer - Disc - Automatically farms all crops (Placed in a center spot, then has a radius that he works in) 
+   - Can be created with Villager Food and Dragon's Brain   
+   - Speed can be upgraded, as well as crop variation, farming radius, etc
+   
+   Undead Pact - Disc - Zombie gaurds that can attack intruders (Placed in a center spot, then they have a radius they spawn in, once intruder leaves, they despawn) 
+   - Can be created with Zombie's Brain and Pigman Scab
+   - Meant to be really dumb and somewhat easy to kill, they're for keeping most of the attacker's Guild occupied so it's harder to raid
+   
+   Machines: (Machines are placed in a schematic pasting sort of way, you place the disc down and it spawns the machine) - These are special items that can do things like fling you across your land, or shoot birds automatically.
+   
+   Bird Splitter - Disc - This machine shoots arrows at all other neutrals and enemies that enter the range of the 
+   - Crafted with Troll's Gold and Toothed Sensor
+   - Radius speed, effects, etc can all be upgraded 
+   
+   Catapult - Disc - This machine can transport players around through shooting them forward
+   - Crafted with Cartery Plate and Kenetic Gell 
+   - Radius speed, effects, etc can all be upgraded 
+   
+   Rarities: - These are rare hard to get/find stuffs. These include things that require a Dragon's Brain to function. Some may be item kits to open.
+
+   Screaming Witch - Disc - This witch can spit out custom Guilds potions at attackers, this will quickly kill them. (Placed in a center spot, then has a radius that he attacks in) 
+   - Can be created with Villager Food and Crystal Ball and Skeleton's Arm
+   - The Screaming Witch has a nature to be quiet until a few seconds after an attacker comes, then it plays the Enderman screaming noise, to scare the pants off of the attacker, making them weak, then brutally recks them with custom potions, but yes, there is still a chance with some of the weapons.
+   - The only things that can be upgraded to the Screaming Witch are the radius, and the agility of the witch, it can get super quick and hard to hit with a lot of materials 
+   
+   Skeleton Jockey - Disc - This rarity can super jump and shoot arrows (Placed in a center spot, then has a radius that he attacks in) 
+   - Can be created with Villager Food and Skeleton's Arm and Dragon's Brain
