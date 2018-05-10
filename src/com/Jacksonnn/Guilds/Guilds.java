@@ -1,10 +1,13 @@
 package com.Jacksonnn.Guilds;
 
-import org.bukkit.Bukkit;
+import java.util.logging.Logger;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Guilds extends JavaPlugin {
 	public static Guilds plugin;
+	public static Logger log;
+	
 	@Override
 	public void onEnable() {
 		
