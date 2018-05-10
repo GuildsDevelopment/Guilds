@@ -27,7 +27,9 @@ public class Guilds extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		
+		if (DBConnection.isOpen != false) {
+			DBConnection.sql.close();
+		}
 	}
 	
 	public void registerCommands() {
