@@ -11,10 +11,7 @@ public class ConfigType {
 	public static final ConfigType LANGUAGE = new ConfigType("Language");
 	public static final ConfigType[] CORE_TYPES = { DEFAULT, LANGUAGE };
 	
-	private String string;
-	
 	public ConfigType(String string) {
-		this.string = string;
 		ALL_TYPES.put(string, this);
 	}
 }

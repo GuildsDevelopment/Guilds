@@ -51,3 +51,5 @@ public class MySQL extends Database {
 			return null;
 		}
 	}
+
+}
