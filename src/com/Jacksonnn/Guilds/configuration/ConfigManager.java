@@ -11,6 +11,8 @@ public class ConfigManager {
 	public ConfigManager() {
 		defaultConfig = new Config(new File("config.yml"));
 		language = new Config(new File("language.yml"));
+		configCheck(ConfigType.DEFAULT);
+		configCheck(ConfigType.LANGUAGE);
 	}
 	
 	public static void configCheck(ConfigType type) {
