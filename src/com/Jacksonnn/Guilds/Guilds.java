@@ -2,9 +2,13 @@ package com.Jacksonnn.Guilds;
 
 import java.util.logging.Logger;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.Jacksonnn.Guilds.configuration.ConfigManager;
 import com.Jacksonnn.Guilds.storage.DBConnection;
+
+import net.md_5.bungee.api.ChatColor;
 
 public class Guilds extends JavaPlugin {
 	public static Guilds plugin;
@@ -12,6 +16,9 @@ public class Guilds extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {
+		plugin = this;
+		new ConfigManager();
+		
 		DBConnection.host = getConfig().getString("Storage.MySQL.host");
 		DBConnection.port = getConfig().getInt("Storage.MySQL.port");
 		DBConnection.pass = getConfig().getString("Storage.MySQL.pass");
@@ -22,7 +29,7 @@ public class Guilds extends JavaPlugin {
 			// Message is logged by DBConnection
 			return;
 		}
-
+		Bukkit.getServer().getLogger().info(ChatColor.DARK_GREEN + "[Guilds] Guilds has sucessfully been enabled!");
 	}
 	
 	@Override
@@ -30,6 +37,7 @@ public class Guilds extends JavaPlugin {
 		if (DBConnection.isOpen != false) {
 			DBConnection.sql.close();
 		}
+		Bukkit.getServer().getLogger().info(ChatColor.DARK_GREEN + "[Guilds] Guilds has sucessfully been enabled!");
 	}
 	
 	public void registerCommands() {
