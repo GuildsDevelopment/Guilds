@@ -1,8 +1,5 @@
 package com.Jacksonnn.Guilds.storage;
 
-import java.sql.DatabaseMetaData;
-import java.sql.SQLException;
-
 import com.Jacksonnn.Guilds.Guilds;
 import com.Jacksonnn.Guilds.Methods;
 
