@@ -19,30 +19,4 @@ public class ConfigType {
 		this.string = string;
 		ALL_TYPES.put(string, this);
 	}
-	public static List<ConfigType> addonValues() {
-		List<ConfigType> values = new ArrayList<>();
-		for (String key : ALL_TYPES.keySet()) {
-			if (!Arrays.asList(CORE_TYPES).contains(ALL_TYPES.get(key))) {
-				values.add(ALL_TYPES.get(key));
-			}
-		}
-		return values;
-	}
-
-	public static List<ConfigType> coreValues() {
-		return Arrays.asList(CORE_TYPES);
-	}
-
-	public String toString() {
-		return toString();
-	}
-
-	public static List<ConfigType> values() {
-		List<ConfigType> values = new ArrayList<>();
-		for (String key : ALL_TYPES.keySet()) {
-			values.add(ALL_TYPES.get(key));
-		}
-		return values;
-	}
-}
 }
