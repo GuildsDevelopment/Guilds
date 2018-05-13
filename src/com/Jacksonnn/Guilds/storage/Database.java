@@ -102,7 +102,7 @@ public abstract class Database {
 				public void run() {
 					doQuery(query);
 				}
-			}.runTaskAsynchronously(ProjectKorra.plugin);
+			}.runTaskAsynchronously(Guilds.plugin);
 		} else {
 			doQuery(query);
 		}
