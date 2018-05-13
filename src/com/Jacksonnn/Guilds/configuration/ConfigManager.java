@@ -6,11 +6,11 @@ import org.bukkit.configuration.file.FileConfiguration;
 
 public class ConfigManager {
 	public static Config defaultConfig;
-	public static Config language;
+	public static Config languageConfig;
 	
 	public ConfigManager() {
 		defaultConfig = new Config(new File("config.yml"));
-		language = new Config(new File("language.yml"));
+		languageConfig = new Config(new File("language.yml"));
 		configCheck(ConfigType.DEFAULT);
 		configCheck(ConfigType.LANGUAGE);
 	}
@@ -18,11 +18,11 @@ public class ConfigManager {
 	public static void configCheck(ConfigType type) {
 		FileConfiguration config;
 		if (type == ConfigType.LANGUAGE) {
-			config = language.get();
+			config = languageConfig.get();
 			
 			config.addDefault("General.prefix", "&8[&2Guilds&8]&f ");
 			config.addDefault("Commands.NoPermission", "You do not have permission to do that.");
-			
+			languageConfig.save();
 		} else if (type == ConfigType.DEFAULT) {
 			config = defaultConfig.get();
 			
@@ -33,6 +33,7 @@ public class ConfigManager {
 			config.addDefault("Storage.MySQL.pass", "");
 			config.addDefault("Storage.MySQL.db", "minecraft");
 			config.addDefault("Storage.MySQL.user", "root");
+			defaultConfig.save();
 		}
 	}
 }
