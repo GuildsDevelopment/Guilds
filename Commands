@@ -1,0 +1,40 @@
+Commands:
+	Aliases: /g, /guilds, /guild
+	/g:
+		- 
+	/g help [<page no>]:
+		-
+	/g create <guild>:
+		-
+	/g info [<guild>]:
+		-
+	/g leader:
+		- Leader only commands
+			/g leader delete:
+				-
+			/g leader invite <player>:
+				-
+			/g leader kick <player>:
+				-
+			/g leader trust <guild>:
+				-
+			/g ledaer attack <guild>:
+				-
+	/g claim:
+		-
+	/g unclaim:
+		-
+	/g coins:
+		-
+			/g coins deposit <amount>:
+				-
+			/g coins withdrawal <amount>:
+				-
+			/g coins add <amount>:
+				- Admin only
+			/g coins remove <amount>:
+				- Admin only
+	/g item:
+		-
+	/g job:
+		-
