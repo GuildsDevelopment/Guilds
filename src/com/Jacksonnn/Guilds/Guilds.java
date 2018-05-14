@@ -17,6 +17,7 @@ public class Guilds extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		plugin = this;
+		Guilds.log = this.getLogger();
 		new ConfigManager();
 		
 		DBConnection.host = getConfig().getString("Storage.MySQL.host");

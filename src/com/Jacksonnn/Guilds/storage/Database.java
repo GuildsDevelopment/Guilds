@@ -30,7 +30,9 @@ public abstract class Database {
 	 * @param message The string to print to console
 	 */
 	protected void printInfo(String message) {
-		log.info(prefix + dbprefix + message);
+		log.info(prefix +
+				dbprefix +
+				message);
 	}
 
 	/**
