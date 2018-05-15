@@ -8,4 +8,6 @@ public class Methods {
 	public static void stopPlugin() {
 		plugin.getServer().getPluginManager().disablePlugin(plugin);
 	}
+	
+	
 }

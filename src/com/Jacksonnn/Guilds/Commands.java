@@ -33,7 +33,7 @@ public class Commands implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 		
 		if (args.length == 0) {
-			sender.sendMessage("Commands:");
+			
 		}
 		else if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
 			sender.sendMessage("Commands:");

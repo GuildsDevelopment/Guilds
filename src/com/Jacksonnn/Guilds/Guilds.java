@@ -38,7 +38,7 @@ public class Guilds extends JavaPlugin {
 		if (DBConnection.isOpen != false) {
 			DBConnection.sql.close();
 		}
-		Bukkit.getServer().getLogger().info(ChatColor.DARK_GREEN + "[Guilds] Guilds has sucessfully been enabled!");
+		Bukkit.getServer().getLogger().info(ChatColor.DARK_GREEN + "[Guilds] Guilds has sucessfully been disabled!");
 	}
 	
 	public void registerCommands() {
