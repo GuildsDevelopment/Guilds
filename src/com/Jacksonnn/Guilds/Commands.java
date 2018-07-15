@@ -37,8 +37,9 @@ public class Commands implements CommandExecutor {
 		if (args.length == 0) {
 			
 		}
-		else if (args.length == 1 && args[0].equalsIgnoreCase("help")) {
+		else if (args.length == 1 && args[0].equalsIgnoreCase("help") || args[0].equalsIgnoreCase("?")) {
 			sender.sendMessage("Commands:");
+			
 		}
 		else if (args.length == 1 && args[0].equalsIgnoreCase("create")) {
 			String name = args[1];
