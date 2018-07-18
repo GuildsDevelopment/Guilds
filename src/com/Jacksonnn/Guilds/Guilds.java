@@ -2,6 +2,7 @@ package com.Jacksonnn.Guilds;
 
 import java.util.logging.Logger;
 
+import com.Jacksonnn.Guilds.commands.Commands;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -19,7 +20,7 @@ public class Guilds extends JavaPlugin {
 		plugin = this;
 		Guilds.log = this.getLogger();
 		new ConfigManager();
-		
+		new Commands(this);
 		DBConnection.host = getConfig().getString("Storage.MySQL.host");
 		DBConnection.port = getConfig().getInt("Storage.MySQL.port");
 		DBConnection.pass = getConfig().getString("Storage.MySQL.pass");
@@ -39,11 +40,5 @@ public class Guilds extends JavaPlugin {
 			DBConnection.sql.close();
 		}
 		Bukkit.getServer().getLogger().info(ChatColor.DARK_GREEN + "[Guilds] Guilds has sucessfully been disabled!");
-	}
-	
-	public void registerCommands() {
-		this.getCommand("guilds").setExecutor(new Commands());
-		this.getCommand("g").setExecutor(new Commands());
-		this.getCommand("guild").setExecutor(new Commands());
 	}
 }
